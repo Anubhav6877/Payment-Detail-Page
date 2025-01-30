@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Payment Landing Page</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="payment-form">
+            <h2>Payment Details</h2>
+            <form id="payment-form">
+                <div class="input-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="Enter card number" required>
+                </div>
+                <div class="input-group">
+                    <label for="expiry-date">Expiration Date</label>
+                    <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                </div>
+                <div class="input-group">
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" placeholder="Enter CVC" required>
+                </div>
+                <div class="input-group">
+                    <button type="submit" id="submit-btn">Pay Now</button>
+                </div>
+                <div id="error-message" class="error-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="dynamic.js"></script>
+</body>
+</html>
